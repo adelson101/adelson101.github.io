@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@media (max-width:600px){
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 :root{
     --cor1: rgb(132, 225, 173);
     --cor2: rgb(47, 168, 102);
