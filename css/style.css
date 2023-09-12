@@ -1,3 +1,5 @@
 .recuo {
-    text-indent:4em
+    text-indent:4em;
+    text-align: justify;
+    text-justify: inter-word;
 }
