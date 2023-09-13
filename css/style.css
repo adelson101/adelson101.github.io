@@ -15,9 +15,19 @@ p {
 }
 
 body {
-    background-color: white;
+    background-color: #21358A;
     height: 100%;
     width: 100%;
+}
+
+.Pesquisa {
+    display: flex;
+    justify-content: center;
+}
+
+.Pesquisa>form{
+    background: white;
+    20px
 }
 
 main {
@@ -39,7 +49,8 @@ main {
     width: 1100px;
     height: 100%;
     padding: 2em 3em 2em 3em;
-    background-color: aqua;
+    background-color: #E5E5E5;
+    order: 1;
 }
 
 h2 {
@@ -84,6 +95,10 @@ h2 {
     
     ._container {
         padding: 1em 2em 1em 2em;
+    }
+    
+    footer {
+        padding: 5px 0px 5px 0px;
     }
 
     .container_TiposComputadores {
