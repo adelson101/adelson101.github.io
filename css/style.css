@@ -2,6 +2,9 @@
     padding: 0%;
     margin: 0%;
     --fonte: 'Roboto', sans-serif;
+    --cor1: #E5E5E5;
+    --cor2: #0A011F;
+    --cor3: #0068C7;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -14,10 +17,35 @@ p {
     font-weight: 400;
 }
 
+h1,h2,h3,h4 {
+    color: var(--cor3);
+}
+
 body {
-    background-color: #0A011F;
+    background-color: var(--cor2);
     height: 100%;
     width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 3em;
+    margin: 1em;
+}
+
+nav > .Item_Nav {
+    font-family: var(--fonte);
+    font-weight: 700;
+    color: var(--cor1);
+    text-decoration:none;
+    padding: 2px;
+    border-bottom: 3px solid #ffffff00;
+}
+
+.Item_Nav:hover {
+    border-bottom: 3px solid var(--cor1);
 }
 
 .Background-Logo{
@@ -50,7 +78,7 @@ main {
     width: 1100px;
     height: 100%;
     padding: 2em 3em 2em 3em;
-    background-color: #E5E5E5;
+    background-color: var(--cor1);
     border-radius: 20px;
     order: 1;
 }
