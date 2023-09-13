@@ -130,4 +130,8 @@ h2 {
         height: 150px;
     }
 
+    h2 {
+        text-align: center;
+    }
+
 }
