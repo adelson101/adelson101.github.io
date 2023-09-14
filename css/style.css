@@ -183,7 +183,7 @@ h2 {
         height: 100%;
         width: 100%;
         display: flex;
-        margin-bottom: 1em;
+        margin-bottom: .5em;
     }
 
     #menu {
