@@ -76,6 +76,7 @@ main {
 }
 
 .Titulo-Logo{
+    margin-top: 1em;
     background-image: url("../Image/Logo ToInformatizado.png");
     width: 100%;
     height: 96px;
@@ -133,7 +134,7 @@ h2 {
 }
 
 @media (max-width:1100px) {
-    
+
     ._container {
         padding: 1em 1em 1em 1em;
         margin: 0px 6px 1em 6px;
@@ -167,7 +168,6 @@ h2 {
     }
 
     .Background-Logo{
-        margin-top: 20px;
         height: auto;
         flex-direction: column;
         justify-content: flex-start;
@@ -183,25 +183,50 @@ h2 {
         height: 100%;
         width: 100%;
         display: flex;
+        margin-bottom: 1em;
     }
 
     #menu {
         width: 100%;
-        display: none;
+        margin: 0%;
+        display: block;
+        height: 0px;
+        width: 100%;
+        transition: height 1s ease 0s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
     }
 
     #btn-mobile {
-        display: block;
-        width: 50px;
-        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
         background: none;
-        border-color: #e5e5e500;
-        background-image: url(../Image/Button_Bottom.png);
+        cursor: pointer;
+        gap: .5rem;
     }
 
-    nav.active #menu{
-        display: flex;
-        flex-direction: column;
+    #menu-icon {
+        border-top: 2px solid #0068C7;
+        width: 30px;
+    }
+
+    #menu-icon::after , #menu-icon::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #0068C7;
+        margin-top: 5px;
+    }
+
+    #nav.active #menu{
+        visibility: visible;
+        overflow-y: auto;
+        height: 120px;
         font-family: var(--fonte);
         font-weight: 700;
         color: var(--cor1);
@@ -211,6 +236,8 @@ h2 {
         list-style: none;
         margin-bottom: 10px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
         gap: .7em;
     }
 
