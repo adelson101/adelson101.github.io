@@ -61,24 +61,23 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    gap: 3em;
+    gap: 1em;
 }
 
 li {
     text-align: justify;
     list-style-type: none;
     font-family: var(--fonte);
-    line-height: 1.5em;
     height: auto;
+}
+
+ol {
+    padding: 1.5em;
 }
 
 .TecladoMouse > img {
     height: 300px;
     width: 300px;
-}
-
-li {
-    text-indent: 3rem;
 }
 
 a {
