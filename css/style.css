@@ -55,6 +55,15 @@ body {
     gap: 3em;
 }
 
+.TecladoMouse-Teclado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3em;
+}
+
 li {
     text-align: justify;
     list-style-type: none;
@@ -158,6 +167,12 @@ h2 {
     text-indent: 0px;
     font-weight: 700;
     margin-bottom: 1em;
+}
+
+.TecladoMouse-Teclado > .Teclado-img{
+    margin-top: 1.5em;
+    width: 488px;
+    height: 275px;
 }
 
 @media (max-width:1100px) {
