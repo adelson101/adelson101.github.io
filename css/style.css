@@ -172,8 +172,8 @@ h2 {
 
 .TecladoMouse-Teclado > .Teclado-img{
     margin-top: 1.5em;
-    width: 488px;
-    height: 275px;
+    width: 561px;
+    height: 327px;
 }
 
 @media (max-width:1100px) {
@@ -290,8 +290,8 @@ h2 {
     
     .TecladoMouse-Teclado > .Teclado-img{
         margin-top: 1.5em;
-        width: 292px;
-        height: 165px;
+        width: 337px;
+        height: 196px;
     }
 
 }
