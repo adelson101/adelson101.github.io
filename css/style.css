@@ -27,6 +27,11 @@ strong {
     color: var(--cor2);
 }
 
+._container.Image-TecladoMouse{
+    height: 300px;
+    width: 300px;
+}
+
 body {
     background-color: var(--cor2);
     height: 100%;
@@ -39,6 +44,28 @@ body {
     align-items: center ;
     gap: 2em;
     margin: 1em;
+}
+
+.TecladoMouse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 3em;
+}
+
+li {
+    text-align: justify;
+    list-style-type: none;
+    font-family: var(--fonte);
+    line-height: 1.5em;
+     height: auto;
+}
+
+.TecladoMouse > img {
+    height: 300px;
+    width: 300px;
 }
 
 a {
@@ -174,7 +201,7 @@ h2 {
         align-items: center;
     }
 
-    h2 {
+    h1, h2 , h3 , h4 , h5 {
         text-align: center;
         margin: 1em;
     }
@@ -239,6 +266,10 @@ h2 {
         display: flex;
         flex-direction: column;
         gap: .7em;
+    }
+
+    .TecladoMouse {
+        flex-direction: column;
     }
 
 }
