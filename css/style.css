@@ -289,8 +289,8 @@ h2 {
     
     .TecladoMouse-Teclado > .Teclado-img{
         margin-top: 1.5em;
-        width: calc(488px*0.6);
-        height: calc(275px*0.6);
+        width: calc(488px*0.2);
+        height: calc(275px*0.2);
     }
 
 }
