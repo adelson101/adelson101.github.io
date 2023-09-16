@@ -54,6 +54,10 @@ table td {
     font-family: var(--fonte);
 }
 
+img {
+    filter: drop-shadow(0px 3px 5px #00000070);
+}
+
 td > img {
     width: 80px;
     height: 80px;
@@ -204,6 +208,7 @@ h2 {
     margin-top: 1.5em;
     width: 561px;
     height: 327px;
+    filter: drop-shadow(0px 3px 5px #0000005d);
 }
 
 @media (max-width:1100px) {
