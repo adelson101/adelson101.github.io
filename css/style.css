@@ -23,6 +23,10 @@ h1,h2,h3,h4 {
     margin-bottom: 1em;
 }
 
+h1 , h2 {
+    text-align: center;
+}
+
 strong {
     color: var(--cor2);
 }
@@ -30,6 +34,29 @@ strong {
 ._container.Image-TecladoMouse{
     height: 300px;
     width: 300px;
+}
+
+.table-round-corner {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    overflow:hidden;
+    border-collapse:separate;
+    border: solid #ccc 1px;
+    -webkit-border-radius: 25px;
+       -moz-border-radius: 25px;
+            border-radius: 25px;
+}
+
+table td {
+    padding: 5px;
+    border: 1px solid #ddd;
+    font-family: var(--fonte);
+}
+
+td > img {
+    width: 80px;
+    height: 80px;
 }
 
 body {
