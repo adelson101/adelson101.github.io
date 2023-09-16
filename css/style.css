@@ -75,6 +75,11 @@ img {
     align-items: center;
 }
 
+.Input-Not > input[type='radio'] {
+    width: 20px;
+    height: 20px;
+}
+
 .Button-Style {
     display: flex;
     justify-content: center;
