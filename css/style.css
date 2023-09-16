@@ -78,6 +78,14 @@ img {
 .Button-Style {
     display: flex;
     justify-content: center;
+    font-family: var(--fonte);
+    padding: .5em 2em;
+    font-size: medium;
+    border-radius: 30px;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    border-style: none;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.199);
 }
 
 form {
