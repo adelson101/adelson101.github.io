@@ -37,7 +37,8 @@ strong {
 }
 
 .table-round-corner {
-    margin-top: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     width: 100%;
     text-align: center;
     overflow:hidden;
@@ -56,6 +57,7 @@ table td {
 
 img {
     filter: drop-shadow(0px 3px 5px #00000070);
+    pointer-events: none;
 }
 
 [type=radio]:checked::before,
@@ -91,6 +93,7 @@ img {
     color: var(--cor1);
     border-style: none;
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.199);
+    margin-bottom: 1em;
 }
 
 form {
