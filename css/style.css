@@ -75,6 +75,11 @@ img {
     align-items: center;
 }
 
+.Button-Style {
+    display: flex;
+    justify-content: center;
+}
+
 form {
     display: flex;
     justify-content: center;
