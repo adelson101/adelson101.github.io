@@ -58,6 +58,30 @@ img {
     filter: drop-shadow(0px 3px 5px #00000070);
 }
 
+[type=radio]:checked::before,
+[type=checkbox]:checked::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #ffa500;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.Input-Not{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 td > img {
     width: 80px;
     height: 80px;
