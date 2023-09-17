@@ -45,9 +45,7 @@ strong {
     overflow:hidden;
     border-collapse:separate;
     border: solid #ccc 1px;
-    -webkit-border-radius: 25px;
-       -moz-border-radius: 25px;
-            border-radius: 25px;
+    border-radius: 25px;
 }
 
 table td {
@@ -206,6 +204,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .Titulo-Logo{
