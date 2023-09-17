@@ -23,8 +23,9 @@ h1,h2,h3,h4 {
     margin-bottom: 1em;
 }
 
-h1 , h2 {
+h1, h2 , h3 , h4 , h5 {
     text-align: center;
+    margin: 1em;
 }
 
 strong {
@@ -96,6 +97,18 @@ img {
     margin-bottom: 1em;
 }
 
+.Imagens-Tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Imagens-Tutorial img{
+    height: 450px;
+    width: 800px;
+}
+
 form {
     display: flex;
     justify-content: center;
@@ -147,7 +160,11 @@ li {
     height: auto;
 }
 
-ol {
+.TecladoMouse > ol {
+    padding: 1.5em;
+}
+
+.TecladoMouse-Teclado > ol {
     padding: 1.5em;
 }
 
@@ -372,6 +389,11 @@ h2 {
         margin-top: 1.5em;
         width: 337px;
         height: 196px;
+    }
+
+    .Imagens-Tutorial img{
+        height: 225px;
+        width: 400px;
     }
 
 }
