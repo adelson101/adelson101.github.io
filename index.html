@@ -268,8 +268,7 @@
                                             <li>Preço: R$ 2.399,00</li>
                                         </ol>
                                         <div class="Input-Not">
-                                            <input type="radio" name="LenovoAtiv1" id="Lenovo">
-                                            <label for="Lenovo">
+                                            <input type="radio" name="AtividadeSelect" id="Lenovo" value="AtividadeSelect-1">
                                             </label>
                                         </div>
                                     </div>
@@ -287,13 +286,24 @@
                                             <li>Preço: R$1.899.00</li>
                                         </ol>
                                         <div class="Input-Not">
-                                            <input type="radio" name="LenovoAtiv1" id="Asus">
-                                            <label for="Asus"></label>
+                                            <input type="radio" name="AtividadeSelect" id="Asus" value="AtividadeSelect-2" checked>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="Button-Style">Enviar</button>
+                            <p id="result"></p>
+                            <script>
+                                let radioBtns = document.querySelectorAll("input[name='AtividadeSelect']");
+                                let result = document.getElementById("result");
+
+                                let findSelected = () => { let selected = () => document.querySelector("input[name='AtividadeSelect']:checked").value; result.textContent = 'value of selectec radio button: ${selected}';  }
+
+                                redioBtns.array.forEach(radioBtns => {
+                                    radioBtns.addEventListener("change",findSelected);
+                                });
+
+                                findSelected();
+                            </script>
                     </form>
                 <h2 id="Internet">Conheça o Windows e Como Acessar a Internet</h2>
 
