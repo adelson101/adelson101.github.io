@@ -253,7 +253,7 @@
                     <h2>Como Comprar um Computador e SmartPhone</h2>
                     <p>Para comprar um computador em uma loja, geralmente é recomendado adquirir computadores de qualidade mais baixa, mas muitas vezes as descrições são pouco explicativas. Portanto, vamos fornecer exemplos para uma análise mais detalhada na hora da compra.</p>
                     <p><strong>Agora que explicamos os principais componentes que compõem o computador, Respoda qual dos dois Notebook abaixo e a melhor opção.</strong></p>
-                    <form action="" method="" autocomplete="on">
+                    <form autocomplete="on">
                             <div class="container_Atividade">
                                 <div class="container_AtividadeComputadores">
                                     <img src="Image/Lenovo.png" alt="Imagem de Monitor Lenovo">
@@ -268,12 +268,11 @@
                                             <li>Preço: R$ 2.399,00</li>
                                         </ol>
                                         <div class="Input-Not">
-                                            <input type="radio" name="AtividadeSelect" id="Lenovo" value="AtividadeSelect-1">
-                                            </label>
+                                            <input type="radio" name="AtividadeSelect" id="AtividadeSelect-1" value="AtividadeSelect-1">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="container_AtividadeComputadores">
+                                <div class="container_AtividadeComputadores" id="Atividade_Form">
                                     <img src="Image/Acer.png" alt="Imagem de Monitor Lenovo">
                                     <div class="container_TextImagem">
                                         <h3>Acer Turbo</h3>
@@ -286,25 +285,28 @@
                                             <li>Preço: R$1.899.00</li>
                                         </ol>
                                         <div class="Input-Not">
-                                            <input type="radio" name="AtividadeSelect" id="Asus" value="AtividadeSelect-2" checked>
+                                            <input type="radio" name="AtividadeSelect" id="AtividadeSelect-2" value="AtividadeSelect-2">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <p id="result"></p>
+                            <button class="Button-Style" type="button" onclick="verificarOpcao()">Verificar</button>
+
                             <script>
-                                let radioBtns = document.querySelectorAll("input[name='AtividadeSelect']");
-                                let result = document.getElementById("result");
-
-                                let findSelected = () => { let selected = () => document.querySelector("input[name='AtividadeSelect']:checked").value; result.textContent = 'value of selectec radio button: ${selected}';  }
-
-                                redioBtns.array.forEach(radioBtns => {
-                                    radioBtns.addEventListener("change",findSelected);
-                                });
-
-                                findSelected();
+                                function verificarOpcao() {
+                                    var opcao1 = document.getElementById("AtividadeSelect-1");
+                                    var opcao2 = document.getElementById("AtividadeSelect-2");
+                                    var myForm = document.getElementById("Atividade_Form");
+                        
+                                    if (opcao2.checked) {
+                                        myForm.style.backgroundColor = "green";
+                                    } else {
+                                        myForm.style.backgroundColor = "green";
+                                    }
+                                }
                             </script>
                     </form>
+                    
                 <h2 id="Internet">Conheça o Windows e Como Acessar a Internet</h2>
 
                     <h3>Conheça a interface do Windows</h3>
