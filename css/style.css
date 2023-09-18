@@ -54,6 +54,12 @@ table td {
     font-family: var(--fonte);
 }
 
+table th {
+    padding: 5px;
+    border: 1px solid #ddd;
+    font-family: var(--fonte);
+}
+
 img {
     filter: drop-shadow(0px 3px 5px #00000070);
     pointer-events: none;
@@ -95,23 +101,21 @@ img {
     margin-bottom: 1em;
 }
 
-.Imagens-Tutorial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.Imagens-Tutorial img{
-    height: 450px;
-    width: 800px;
-}
-
 form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 1.5em;
+}
+
+.container_Atividade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-top: 1em;
 }
 
 td > img {
@@ -156,6 +160,20 @@ li {
     list-style-type: none;
     font-family: var(--fonte);
     height: auto;
+}
+
+.Text-Tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.Box-Tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .TecladoMouse > ol {
@@ -241,6 +259,27 @@ h2 {
     gap: 3em;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.container_AtividadeComputadores {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cor3);
+    padding: 1em;
+    border-radius: 20px;
+    color: var(--cor1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.219);
+    border-color: none;
+}
+
+.container_AtividadeComputadores >img{
+    height: 250px;
+    height: 250px;
+    order: 1;
 }
 
 .container_TiposComputadores>img{
@@ -253,6 +292,10 @@ h2 {
     font-family: var(--fonte);
     font-weight: 700;
     order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container_TextImagem>p{
@@ -394,9 +437,9 @@ h2 {
         height: 196px;
     }
 
-    .Imagens-Tutorial img{
-        height: 203px;
-        width: 360px;
+    iframe {
+        width: 336px;
+        height: 188px;
     }
 
 }
