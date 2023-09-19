@@ -127,6 +127,8 @@ body {
     background-color: var(--cor2);
     height: 100%;
     width: 100%;
+    margin-bottom: 1em;
+
 }
 
 #menu {
@@ -223,7 +225,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2em;
 }
 
 .Titulo-Logo{
@@ -317,15 +318,42 @@ h2 {
     filter: drop-shadow(0px 3px 5px #0000005d);
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer > h1 {
+    color: var(--cor1);
+    font-family: var(--fonte);
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: .1em;
+}
+
+.imagens-footer{
+    display: flex;
+    gap: 2em;
+    align-items: end;
+}
+
+.imagens-footer > .Logo-unitins {
+    width: 150px;
+    height: 60px;
+}
+
+.imagens-footer > .Logo-Tograduado {
+    width: 150px;
+    height: 35px;
+}
+
 @media (max-width:1100px) {
 
     ._container {
         padding: 1em 1em 1em 1em;
         margin: 0px 6px 1em 6px;
-    }
-    
-    footer {
-        padding: 5px 0px 5px 0px;
     }
 
     .container_TiposComputadores {
